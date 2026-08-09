@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Robot Control Center</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Interactive Robot Dashboard</h1>
+
+        <nav>
+            <button class="nav-btn active"
+                    onclick="switchTab('main', this)">
+                Main
+            </button>
+
+            <button class="nav-btn"
+                    onclick="switchTab('ai', this)">
+                Video and Photo
+            </button>
+
+            <button class="nav-btn ai"
+                    onclick="switchTab('aiai', this)">
+                Local AI
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- MAIN TAB -->
+    <div id="tab-main" class="tab-content active">
+
+        <p>
+            <strong>Response Text:</strong>
+            <span id="current-response">
+                Select a trigger...
+            </span>
+        </p>
+
+        <div id="trigger-buttons"></div>
+
+    </div>
+
+
+    <!-- LOCAL AI TAB -->
+    <div id="tab-ai" class="tab-content">
+
+        <h2></h2>
+
+        <div class="media-gallery">
+
+            <!-- PHOTO -->
+            <div class="media-card">
+                <h3>Robot Photo</h3>
+
+                <img src="media/robot.jpg"
+                     alt="Robot Photo">
+
+            
+                <h3>Robot Photo</h3>
+
+                <img src="media/bot5.jpg"
+                     alt="Robot Photo">
+
+                <h3>Robot Photo</h3>
+
+                <img src="media/bot6.jpg"
+                     alt="Robot Photo">
+
+                <h3>Robot Photo</h3>
+
+                <img src="media/image (5).png"
+                     alt="Robot Photo">
+
+                <h3>Robot Photo</h3>
+
+                <img src="media/bot3.jpg"
+                     alt="Robot Photo">
+
+                <h3>Robot Photo</h3>
+
+                <img src="media/bot4.jpg"
+                     alt="Robot Photo">
+
+                <h3>Robot Photo</h3>
+
+                <img src="media/bot1.jpg"
+                     alt="Robot Photo">
+
+                <h3>Robot Photo</h3>
+
+                <img src="media/bot2.jpg"
+                     alt="Robot Photo">
+
+              
+            </div>
+
+
+            <!-- VIDEO -->
+            <div class="media-card">
+                <h3>Robot Video</h3>
+
+                <video controls>
+                    <source src="media/bot-compressed.mp4"
+                            type="video/mp4">
+
+                    Your browser does not support video.
+                </video>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="a.js"></script>
+
+</body>
+</html>
